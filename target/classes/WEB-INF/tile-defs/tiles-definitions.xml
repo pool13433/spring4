@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="defaultTemplate" template="/WEB-INF/template/default/template.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/template/default/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/template/default/menu.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/template/default/footer.jsp" />	
+			
+		<put-list-attribute name="javascriptsItems">
+			<add-attribute value="/public/js/jquery.min.js" />
+			<add-attribute value="/public/js/bootstrap.min.js" />
+			<add-attribute value="/public/js/angular.min.js" />
+			<add-attribute value="/public/js/angular-route.min.js" />
+			<add-attribute value="/public/js/app.js" />
+			<add-attribute value="/public/js/factoryService.js" />
+			<add-attribute value="/public/js/angularJsConstanct.js" />
+			<add-attribute value="/public/js/poolsawatController.js" />
+			<add-attribute value="/public/js/restclientController.js" />
+			<add-attribute value="/public/js/angularJsEventsController.js" />
+		</put-list-attribute>
+		<put-list-attribute name="stylesheetsItems">
+			<add-attribute value="/public/css/bootstrap.min.css" />
+		</put-list-attribute>	
+			
+	</definition>
+</tiles-definitions>
